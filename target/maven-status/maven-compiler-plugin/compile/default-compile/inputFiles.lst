@@ -1,0 +1,9 @@
+/home/pedroleal/url-shortener/src/main/java/com/example/ShortenerURL/models/UrlRequest.java
+/home/pedroleal/url-shortener/src/main/java/com/example/ShortenerURL/models/ShortUrl.java
+/home/pedroleal/url-shortener/src/main/java/com/example/ShortenerURL/models/UrlResponse.java
+/home/pedroleal/url-shortener/src/main/java/com/example/ShortenerURL/exceptions/GlobalExceptionHandler.java
+/home/pedroleal/url-shortener/src/main/java/com/example/ShortenerURL/models/UrlStatsResponse.java
+/home/pedroleal/url-shortener/src/main/java/com/example/ShortenerURL/repositories/ShortUrlRepository.java
+/home/pedroleal/url-shortener/src/main/java/com/example/ShortenerURL/services/ShortUrlService.java
+/home/pedroleal/url-shortener/src/main/java/com/example/ShortenerURL/App.java
+/home/pedroleal/url-shortener/src/main/java/com/example/ShortenerURL/controllers/ShortUrlController.java

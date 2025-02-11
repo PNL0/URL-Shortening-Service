@@ -1,0 +1,3 @@
+com/example/urlshortener/AppTest.class
+com/example/urlshortener/controllers/ShortUrlControllerTest.class
+com/example/urlshortener/services/ShortUrlServiceTest.class
