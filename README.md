@@ -9,7 +9,6 @@ The URL Shortener API is a simple RESTful service that allows users to shorten l
 - Update an existing short URL.
 - Delete a short URL.
 - Get statistics on how many times a short URL has been accessed.
-- Optional frontend for interacting with the API and handling redirections.
 
 ## Tech Stack
 - **Java** (Spring Boot)
