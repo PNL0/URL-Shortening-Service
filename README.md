@@ -24,22 +24,22 @@ The URL Shortener API is a simple RESTful service that allows users to shorten l
 **POST /shorten**
 
 #### Request Body:
-\`\`\`json
+```
 {
-  \"url\": \"https://www.example.com/some/long/url\"
+  "url": "https://www.example.com/some/long/url"
 }
-\`\`\`
+```
 
 #### Response (201 Created):
-\`\`\`json
+```
 {
-  \"id\": \"1\",
-  \"url\": \"https://www.example.com/some/long/url\",
-  \"shortCode\": \"abc123\",
-  \"createdAt\": \"2021-09-01T12:00:00Z\",
-  \"updatedAt\": \"2021-09-01T12:00:00Z\"
+  "id": "1",
+  "url": "https://www.example.com/some/long/url",
+  "shortCode": "abc123",
+  "createdAt": "2021-09-01T12:00:00Z",
+  "updatedAt": "2021-09-01T12:00:00Z"
 }
-\`\`\`
+```
 
 #### Errors:
 - 400 Bad Request: Invalid input.
@@ -48,15 +48,15 @@ The URL Shortener API is a simple RESTful service that allows users to shorten l
 **GET /shorten/{shortCode}**
 
 #### Response (200 OK):
-\`\`\`json
+```
 {
-  \"id\": \"1\",
-  \"url\": \"https://www.example.com/some/long/url\",
-  \"shortCode\": \"abc123\",
-  \"createdAt\": \"2021-09-01T12:00:00Z\",
-  \"updatedAt\": \"2021-09-01T12:00:00Z\"
+  "id": "1",
+  "url": "https://www.example.com/some/long/url",
+  "shortCode": "abc123",
+  "createdAt": "2021-09-01T12:00:00Z",
+  "updatedAt": "2021-09-01T12:00:00Z"
 }
-\`\`\`
+```
 
 #### Errors:
 - 404 Not Found: Short URL not found.
@@ -65,22 +65,22 @@ The URL Shortener API is a simple RESTful service that allows users to shorten l
 **PUT /shorten/{shortCode}**
 
 #### Request Body:
-\`\`\`json
+```
 {
-  \"url\": \"https://www.example.com/some/updated/url\"
+  "url": "https://www.example.com/some/updated/url"
 }
-\`\`\`
+```
 
 #### Response (200 OK):
-\`\`\`json
+```
 {
-  \"id\": \"1\",
-  \"url\": \"https://www.example.com/some/updated/url\",
-  \"shortCode\": \"abc123\",
-  \"createdAt\": \"2021-09-01T12:00:00Z\",
-  \"updatedAt\": \"2021-09-01T12:30:00Z\"
+  "id": "1",
+  "url": "https://www.example.com/some/updated/url",
+  "shortCode": "abc123",
+  "createdAt": "2021-09-01T12:00:00Z",
+  "updatedAt": "2021-09-01T12:30:00Z"
 }
-\`\`\`
+```
 
 #### Errors:
 - 400 Bad Request: Invalid input.
@@ -98,16 +98,16 @@ The URL Shortener API is a simple RESTful service that allows users to shorten l
 **GET /shorten/{shortCode}/stats**
 
 #### Response (200 OK):
-\`\`\`json
+```
 {
-  \"id\": \"1\",
-  \"url\": \"https://www.example.com/some/long/url\",
-  \"shortCode\": \"abc123\",
-  \"createdAt\": \"2021-09-01T12:00:00Z\",
-  \"updatedAt\": \"2021-09-01T12:00:00Z\",
-  \"accessCount\": 10
+  "id": "1",
+  "url": "https://www.example.com/some/long/url",
+  "shortCode": "abc123",
+  "createdAt": "2021-09-01T12:00:00Z",
+  "updatedAt": "2021-09-01T12:00:00Z",
+  "accessCount": 10
 }
-\`\`\`
+```
 
 #### Errors:
 - 404 Not Found: Short URL not found.
@@ -119,29 +119,29 @@ The URL Shortener API is a simple RESTful service that allows users to shorten l
 
 ### Steps to Run
 1. Clone the repository:
-   \`\`\`sh
+   ```sh
    git clone <repository_url>
    cd ShortenerURL
-   \`\`\`
-2. Configure H2 database settings in \`application.properties\`:
-   \`\`\`properties
+   ```
+2. Configure H2 database settings in `application.properties`:
+   ```properties
    spring.datasource.url=jdbc:h2:mem:shortener_db
    spring.datasource.driverClassName=org.h2.Driver
    spring.datasource.username=sa
    spring.datasource.password=
    spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
    spring.h2.console.enabled=true
-   \`\`\`
+   ```
 3. Build and run the application:
-   \`\`\`sh
+   ```sh
    mvn spring-boot:run
-   \`\`\`
+   ```
 
 ## Testing
 To run tests, execute:
-\`\`\`sh
+```sh
 mvn test
-\`\`\`
+```
 
 ## License
 This project is licensed under the MIT License.
