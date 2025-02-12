@@ -22,12 +22,12 @@ The URL Shortener API is a simple RESTful service that allows users to shorten l
 **POST /shorten**
 
 #### Request Body:
-\`\`\`
+```
 json
 {
   \"url\": \"https://www.example.com/some/long/url\"
 }
-\`\`\`
+```
 
 #### Response (201 Created):
 \`\`\`json
