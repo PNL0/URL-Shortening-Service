@@ -1,4 +1,4 @@
-# URL Shortner API
+# URL Shortener API
 ## Overview
 The URL Shortener API is a simple RESTful service that allows users to shorten long URLs, retrieve the original URLs, update and delete short URLs, and track statistics on the number of accesses.
 
