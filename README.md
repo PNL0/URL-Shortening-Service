@@ -19,11 +19,11 @@ The URL Shortener API is a simple RESTful service that allows users to shorten l
 ## API Endpoints
 
 ### 1. Create Short URL
-**POST /shorten**
-
+```
+POST /shorten
+```
 #### Request Body:
 ```
-json
 {
   \"url\": \"https://www.example.com/some/long/url\"
 }
