@@ -25,7 +25,7 @@ POST /shorten
 #### Request Body:
 ```
 {
-  \"url\": \"https://www.example.com/some/long/url\"
+  "url": "https://www.example.com/some/long/url"
 }
 ```
 
